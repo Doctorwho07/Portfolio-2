@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Cookies from "js-cookie";
 import "../styles/header.css";
 import LottieArrow from "./LottieArrow";
@@ -11,7 +11,6 @@ const Header = ({ view, setView }) => {
   const currentPath = location.pathname;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,11 +23,10 @@ const Header = ({ view, setView }) => {
     }
   }, [setView]);
 
-  const handleViewSwitch = () => {
-    const newView = view === "blog" ? "portfolio" : "blog";
+  const handleViewChange = (newView) => {
     setView(newView);
-    Cookies.set("siteView", newView, { expires: 7 });
-    navigate("/");
+    Cookies.set("siteView", newView); // Mise à jour du cookie
+    setIsMenuOpen(false); // Ferme le menu après le clic
   };
 
   return (
@@ -162,12 +160,15 @@ const Header = ({ view, setView }) => {
                 </>
               )}
             </ul>
-            <button
+            <Link
+              to={view === "blog" ? "/portfolio" : "/blog"}
               className="btn my-2 my-sm-0 line"
-              onClick={handleViewSwitch}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
               style={{ display: "flex", alignItems: "center" }}
+              onClick={() =>
+                handleViewChange(view === "blog" ? "portfolio" : "blog")
+              }
             >
               <LottieArrow
                 animationData={
@@ -175,7 +176,7 @@ const Header = ({ view, setView }) => {
                 }
               />
               {view === "blog" ? "Portfolio" : "Blog"}
-            </button>
+            </Link>
           </div>
         </div>
       </nav>

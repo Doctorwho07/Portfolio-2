@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Entreprise = () => (
   <div className="container mt-5" id="entreprise">

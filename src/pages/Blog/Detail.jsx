@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import projects from "../../Projects";
 
 const Detail = () => {
