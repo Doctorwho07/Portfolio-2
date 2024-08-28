@@ -28,6 +28,8 @@ const App = () => {
         <Header view={view} setView={setView} />
         <main>
           <Routes>
+            <Route path="/portfolio" element={<Contact />} />
+            <Route path="/blog" element={<Contact />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
