@@ -88,17 +88,6 @@ const Header = ({ view, setView }) => {
                   </li>
                   <li className="nav-item">
                     <Link
-                      to="/contact"
-                      className={`nav-link button-link ${
-                        currentPath === "/contact" ? "active-link" : ""
-                      }`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Contact
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
                       to="/bilan"
                       className={`nav-link button-link ${
                         currentPath === "/bilan" ? "active-link" : ""
@@ -106,6 +95,17 @@ const Header = ({ view, setView }) => {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Bilan
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/contact"
+                      className={`nav-link button-link ${
+                        currentPath === "/contact" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Contact
                     </Link>
                   </li>
                 </>

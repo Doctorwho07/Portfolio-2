@@ -148,7 +148,6 @@ const Entreprise = () => (
                 <a
                   href="https://www.cimra.fr"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   cimra.fr
                 </a>
@@ -158,7 +157,6 @@ const Entreprise = () => (
                 <a
                   href="https://www.linkedin.com/company/cimraindex/"
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   CIMRA INFORMATIQUE SERVICES
                 </a>

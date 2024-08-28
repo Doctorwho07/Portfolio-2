@@ -29,7 +29,9 @@ const Contact = () => (
               </p>
               <p>
                 <strong>Portefeuille numérique :</strong>{" "}
-                <a href="https://alexis-r.link">Alexis-R</a>
+                <a href="https://alexis-r.link" target="_blank">
+                  Alexis-R
+                </a>
               </p>
             </div>
 

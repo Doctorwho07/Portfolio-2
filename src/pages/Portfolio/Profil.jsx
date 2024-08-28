@@ -29,7 +29,7 @@ const About = () => (
       </a>
     </div>
     <div className="mt-4">
-      <a href="https://alexis-r.link" className="btn">
+      <a href="https://alexis-r.link" className="btn" target="_blank">
         Mon Profil Numérique
       </a>
     </div>
