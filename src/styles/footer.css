@@ -27,3 +27,8 @@ footer p::after {
   content: " —";
   color: var(--primary);
 }
+footer a:hover {
+  color: var(--primary) !important;
+  font-weight: 900;
+  transition: 0.2s;
+}

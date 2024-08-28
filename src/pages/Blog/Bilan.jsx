@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import projects from "../Projects.js";
+import projects from "../../Projects.js";
 
 const Bilan = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });

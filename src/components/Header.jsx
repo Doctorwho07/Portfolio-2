@@ -1,14 +1,34 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 import "../styles/header.css";
+import LottieArrow from "./LottieArrow";
+import arrowWhiteAnimation from "./arrow-white.json";
+import arrowPrimaryAnimation from "./arrow-primary.json";
 
-const Header = () => {
+const Header = ({ view, setView }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    const savedView = Cookies.get("siteView");
+    if (savedView) {
+      setView(savedView);
+    }
+  }, [setView]);
+
+  const handleViewSwitch = () => {
+    const newView = view === "blog" ? "portfolio" : "blog";
+    setView(newView);
+    Cookies.set("siteView", newView, { expires: 7 });
+    navigate("/");
   };
 
   return (
@@ -33,95 +53,129 @@ const Header = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link
-                  to="/about"
-                  className={`nav-link button-link ${
-                    currentPath === "/about" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  À propos
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/entreprise"
-                  className={`nav-link button-link ${
-                    currentPath === "/entreprise" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Entreprise
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/articles"
-                  className={`nav-link button-link ${
-                    currentPath === "/articles" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Articles
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/contact"
-                  className={`nav-link button-link ${
-                    currentPath === "/contact" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/bilan"
-                  className={`nav-link button-link ${
-                    currentPath === "/bilan" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Bilan
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/SiteMap"
-                  className={`nav-link button-link ${
-                    currentPath === "/SiteMap" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Plan du site
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/mentions-legales"
-                  className={`nav-link button-link ${
-                    currentPath === "/mentions-legales" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Mentions légales
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/remerciements"
-                  className={`nav-link button-link ${
-                    currentPath === "/remerciements" ? "active-link" : ""
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Remerciements
-                </Link>
-              </li>
+              {view === "blog" ? (
+                <>
+                  <li className="nav-item">
+                    <Link
+                      to="/about"
+                      className={`nav-link button-link ${
+                        currentPath === "/about" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      À propos
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/entreprise"
+                      className={`nav-link button-link ${
+                        currentPath === "/entreprise" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Entreprise
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/articles"
+                      className={`nav-link button-link ${
+                        currentPath === "/articles" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Articles
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/contact"
+                      className={`nav-link button-link ${
+                        currentPath === "/contact" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/bilan"
+                      className={`nav-link button-link ${
+                        currentPath === "/bilan" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Bilan
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <Link
+                      to="/profil"
+                      className={`nav-link button-link ${
+                        currentPath === "/profil" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Mon Profil
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/lettres-recommandation"
+                      className={`nav-link button-link ${
+                        currentPath === "/lettres-recommandation"
+                          ? "active-link"
+                          : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Recommandations
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/competences"
+                      className={`nav-link button-link ${
+                        currentPath === "/competences" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Compétences
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/contact"
+                      className={`nav-link button-link ${
+                        currentPath === "/contact" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
+            <button
+              className="btn my-2 my-sm-0 line"
+              onClick={handleViewSwitch}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              style={{ display: "flex", alignItems: "center" }}
+            >
+              <LottieArrow
+                animationData={
+                  isHovered ? arrowPrimaryAnimation : arrowWhiteAnimation
+                }
+              />
+              {view === "blog" ? "Portfolio" : "Blog"}
+            </button>
           </div>
         </div>
       </nav>

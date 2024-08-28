@@ -144,6 +144,26 @@ const Entreprise = () => (
               <li className="list-group-item">
                 <strong>Horaires : </strong>Lundi au vendredi, de 9h à 19h
               </li>
+              <li className="list-group-item">
+                <strong>Site internet : </strong>
+                <a
+                  href="https://www.cimra.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  cimra.fr
+                </a>
+              </li>
+              <li className="list-group-item">
+                <strong>LinkedIn : </strong>
+                <a
+                  href="https://www.linkedin.com/company/cimraindex/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CIMRA INFORMATIQUE SERVICES
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -164,28 +184,6 @@ const Entreprise = () => (
               et personnalisées, tout en restant disponible et réactive. CIMRA
               est là pour assurer la sérénité informatique et permettre aux
               entreprises de se concentrer sur leur développement.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="row mb-5">
-      <div className="col-md-12">
-        <div className="card text-center">
-          <div className="card-body">
-            <h2 className="card-title mb-0">Suivez CIMRA</h2>
-            <p>
-              Pour rester informé des dernières nouveautés et services de CIMRA,
-              retrouvez l’entreprise sur{" "}
-              <a
-                href="https://www.linkedin.com/company/cimraindex/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-              .
             </p>
           </div>
         </div>

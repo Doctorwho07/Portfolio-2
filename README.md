@@ -47,3 +47,6 @@ Pour toute question ou commentaire, vous pouvez me joindre via les informations 
 ---
 
 Merci de visiter mon blog ! N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
+//TODO : popup accept cookies necessaire / optionnnel
+//TODO : dark theme
+//TODO : langage
