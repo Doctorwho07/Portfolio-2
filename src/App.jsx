@@ -22,8 +22,8 @@ import Detail from "./pages/Blog/Detail";
 import Profil from "./pages/Portfolio/Profil";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Competences from "./pages/Portfolio/Competences";
-import Projets from "./pages/Portfolio/projets";
-import Experiences from "./pages/Portfolio/experiences";
+import Projets from "./pages/Portfolio/Projets";
+import Experiences from "./pages/Portfolio/Experiences";
 
 const App = () => {
   const [view, setView] = useState("blog");
