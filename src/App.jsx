@@ -24,6 +24,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Competences from "./pages/Portfolio/Competences";
 import Projets from "./pages/Portfolio/Projets";
 import Experiences from "./pages/Portfolio/Experiences";
+import DetailProjet from "./pages/Portfolio/Detail";
 
 const App = () => {
   const [view, setView] = useState("blog");
@@ -47,6 +48,7 @@ const App = () => {
                 <Route path="/competences" element={<Competences />} />
                 <Route path="/projets" element={<Projets />} />
                 <Route path="/experiences" element={<Experiences />} />
+                <Route path="/projets/:id" element={<DetailProjet />} />
               </>
             )}
             {view === "blog" && (
