@@ -86,7 +86,7 @@ const Remerciements = () => (
           <div className="card-body">
             <p className="card-text">
               Merci aux différents clients de l'entreprise qui m'ont apportés
-              confiance en moi
+              confiance en moi.
               <strong>CIMRA</strong>.
             </p>
           </div>
@@ -98,14 +98,20 @@ const Remerciements = () => (
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title mb-0">
-              Équipe Relation École et Entreprise
-            </h2>
+            <h2 className="card-title mb-0">Ynov</h2>
           </div>
           <div className="card-body">
             <p className="card-text">
               Merci à l'équipe relation école et entreprise pour leurs
-              réactivités
+              réactivités.
+            </p>
+            <p className="card-text">
+              Je suis également reconnaissant envers l'équipe d'intervenants
+              pour la qualité de leurs formations.
+            </p>
+            <p className="card-text">
+              Enfin, merci à mes camarades pour leurs conseils avisés, leurs
+              remarques constructives, et la motivation qu'ils ont su partager.
             </p>
           </div>
         </div>

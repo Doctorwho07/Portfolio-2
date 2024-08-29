@@ -20,9 +20,10 @@ import Remerciements from "./pages/Blog/Remerciements";
 import Detail from "./pages/Blog/Detail";
 //----- Portfolio -----//
 import Profil from "./pages/Portfolio/Profil";
-import Recommandations from "./pages/Portfolio/Recommandations";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Competences from "./pages/Portfolio/Competences";
+import Projets from "./pages/Portfolio/projets";
+import Experiences from "./pages/Portfolio/experiences";
 
 const App = () => {
   const [view, setView] = useState("blog");
@@ -36,14 +37,16 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="/sitemap" element={<SiteMap />} />
+            <Route path="/remerciements" element={<Remerciements />} />
             <Route path="*" element={<NotFound />} />
 
             {view === "portfolio" && (
               <>
                 <Route path="/" element={<Portfolio />} />
                 <Route path="/profil" element={<Profil />} />
-                <Route path="/recommandations" element={<Recommandations />} />
                 <Route path="/competences" element={<Competences />} />
+                <Route path="/projets" element={<Projets />} />
+                <Route path="/experiences" element={<Experiences />} />
               </>
             )}
             {view === "blog" && (
@@ -53,8 +56,7 @@ const App = () => {
                 <Route path="/entreprise" element={<Entreprise />} />
                 <Route path="/articles" element={<Articles />} />
                 <Route path="/bilan" element={<Bilan />} />
-                <Route path="/remerciements" element={<Remerciements />} />
-                <Route path="/projects/:id" element={<Detail />} />
+                <Route path="/missions/:id" element={<Detail />} />
               </>
             )}
             <Route
@@ -75,7 +77,7 @@ const App = () => {
             />
           </Routes>
         </main>
-        <Footer />
+        <Footer view={view} setView={setView} />
       </div>
     </Router>
   );

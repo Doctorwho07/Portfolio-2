@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import projects from "../../Projects.js";
+import missions from "../../Missions.js";
 
 const Bilan = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
   const getSortedPosts = () => {
-    let allPosts = projects.flatMap((project) =>
+    let allPosts = missions.flatMap((project) =>
       project.posts.map((post) => ({
         ...post,
         theme: project.theme,

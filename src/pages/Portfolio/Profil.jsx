@@ -1,171 +1,246 @@
 import React from "react";
 
-const About = () => (
-  <div className="container mt-5" id="about">
-    <h1 className="mb-4">À propos</h1>
+const Profil = () => (
+  <div className="container mt-5" id="profil">
     <div className="row mb-5">
-      <div className="col-md-12">
-        <div className="card">
+      <h1 className="mb-4">Profil</h1>
+      <div className="col-md-4 d-flex align-items-stretch">
+        <div className="card mb-4 flex-fill">
+          <div className="card-body">
+            <div className="card-header mb-4">
+              <h2>
+                <strong>💻 Alexis Rouches 🔐</strong>
+              </h2>
+            </div>
+            <p className="card-text">
+              Étudiant en <span>3ème année</span> de Bachelor. Spécialité
+              <span>infrastructure réseaux</span> & <span>cybersécurité</span> à
+              Lyon Ynov Campus. Actuellement à la recherche d'une{" "}
+              <span>alternance</span> en cybersécurité pour octobre 2024.
+            </p>
+            <p>
+              <strong>Email :</strong>{" "}
+              <a href="mailto:alexis.rouches@icloud.com">
+                alexis.rouches@icloud.com
+              </a>
+            </p>
+            <p>
+              <strong>Téléphone :</strong>{" "}
+              <a href="tel:0778221121">0778221121</a>
+            </p>
+            <p>
+              <strong>Portefeuille numérique :</strong>{" "}
+              <a
+                href="https://alexis-r.link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Alexis-R
+              </a>
+            </p>
+            <p>
+              <strong>Lieu :</strong> Lyon, Auvergne-Rhône-Alpes, France
+            </p>
+            <p>
+              <strong>Permis :</strong> Permis B
+            </p>
+            <p>
+              <strong>Langue :</strong> Anglais B2
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-8 d-flex align-items-stretch">
+        <div className="card mb-4 flex-fill">
           <div className="card-header">
-            <h2 className="card-title mb-0">1. Introduction</h2>
+            <h2 className="card-title mb-0">À propos de moi</h2>
           </div>
           <div className="card-body">
             <p className="card-text">
-              Bienvenue sur mon blog où je partage mes expériences
-              professionnelles, les erreurs rencontrées, et les solutions
-              trouvées, en tant qu'étudiant en troisième année de Bachelor à
-              Lyon Ynov Campus. Pour obtenir un detail complet de mes
-              compétences et expériences professionnelles je vous invite à
-              consulter mon CV. Vous pouvez également retrouver mes differents
-              réseaux sociaux sur ma page gravatar.
+              Actuellement en formation à Lyon Ynov Campus, j'aspire à
+              approfondir mes compétences en cybersécurité pour contribuer à la
+              protection des systèmes d'information. Mes expériences académiques
+              et professionnelles m'ont permis de développer une solide
+              expertise technique et un esprit critique, essentiel pour réussir
+              dans ce domaine.
+            </p>
+            <p className="card-text">
+              En parallèle, je m'engage activement dans des plateformes de
+              cybersécurité telles que Root-Me, où je continue d'affiner mes
+              compétences en Red-Teaming et Blue-Teaming. Je participe également
+              à des événements comme les Hackathons, où j'ai pu collaborer avec
+              des équipes pour résoudre des défis en sécurité informatique.
+            </p>
+            <p className="card-text">
+              Mon intérêt pour l'informatique ne se limite pas à la
+              cybersécurité, je m'intéresse aussi au développement logiciel,
+              particulièrement en Python et en JavaScript, ainsi qu'à
+              l'administration système sous Linux, où j'ai pu configurer et
+              sécuriser divers environnements serveurs.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div className="mt-4">
-      <a href="/CV Alexis ROUCHES.pdf" download className="btn">
-        Télécharger Mon CV
-      </a>
-    </div>
-    <div className="mt-4">
-      <a href="https://alexis-r.link" className="btn" target="_blank">
-        Mon Profil Numérique
-      </a>
-    </div>
 
     <div className="row mb-5">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title mb-0">Contexte Académique</h2>
+            <h2 className="card-title mb-0">Formation</h2>
           </div>
           <div className="card-body">
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <strong>Formation :</strong> Actuellement en troisième année de
-                Bachelor à Lyon Ynov Campus, je me spécialise en infrastructure
-                réseau et cybersécurité. Mon parcours est enrichi par une
-                alternance qui me permet d'allier théorie et pratique,
-                consolidant ainsi mes compétences.
-              </li>
-              <li className="list-group-item">
-                <strong>Projet académique :</strong> Ce blog a été développé
-                pour documenter mes apprentissages, tant dans le milieu
-                professionnel que dans le cadre de ma formation. J'ai choisi de
-                développer ce site en utilisant React et Vite, deux technologies
-                que je ne maîtrisais pas au départ. Pour faciliter la mise en
-                page, j'ai opté pour Bootstrap et des composants simples, afin
-                de conserver un design sobre et moderne.
-              </li>
-              <li className="list-group-item">
-                <strong>Expérience pratique :</strong> La formation à Ynov
-                Campus comprend des projets pratiques, des connaissances
-                théoriques, un stage obligatoire en deuxième année, ainsi qu'une
-                alternance en troisième année, ce qui me permet d'acquérir une
-                solide expérience dans le domaine de la cybersécurité et de
-                l'infrastructure réseau.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="row mb-5">
-      <div className="col-md-12">
-        <div className="card">
-          <div className="card-header">
-            <h2 className="card-title mb-0">Objectifs du Site</h2>
-          </div>
-          <div className="card-body">
-            <p>J'ai conçu ce site avec plusieurs objectifs :</p>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <strong>Documenter mon parcours :</strong> Présenter les
-                éléments essentiels de mon parcours et offrir une vue d'ensemble
-                de mes expériences.
-              </li>
-              <li className="list-group-item">
-                <strong>Montrer ma progression :</strong> Illustrer comment j'ai
-                évolué au cours de ma formation, en mettant en avant les
-                compétences acquises et les projets réalisés.
-              </li>
-              <li className="list-group-item">
-                <strong>Maintenir le site à jour :</strong> J'ai conçu ce site
-                pour qu'il soit évolutif et réponde aux exigences futures, avec
-                une publication automatisée d'articles en fonction de mes
-                expériences.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="row mb-5">
-      <div className="col-md-12">
-        <div className="card">
-          <div className="card-header">
-            <h2 className="card-title mb-0">Réalisation du Site</h2>
-          </div>
-          <div className="card-body">
-            <p>
-              J'ai décidé de me lancer quelques défis pour réaliser ce blog :
+            <p className="card-text">
+              <strong>Master 2</strong> - Lyon Ynov Campus, Lyon - 2025 - 2027
             </p>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">
-                <strong>Développement :</strong> J'ai choisi d'utiliser deux
-                technologies que je ne connaissais pas : Vite, pour accélérer la
-                compilation, et React, une technologie très répandue et réputée
-                pour sa facilité d'utilisation. J'ai également opté pour
-                Bootstrap, afin de gagner du temps sur la partie design.
+            <p className="card-text">
+              Spécialités : Infrastructure & SI / Cybersécurité
+            </p>
+            <hr />
+            <p className="card-text">
+              <strong>Bachelor Informatique 1 & 2</strong> - Lyon Ynov Campus,
+              Lyon - 2022 - Présent
+            </p>
+            <p className="card-text">
+              <strong>Programme Bachelor :</strong>
+            </p>
+            <p className="card-text">
+              <strong>1ère année :</strong>
+            </p>
+            <ul>
+              <li>
+                Développement : Programmation Java, Programmation Orientée Objet
+                (C++ / Java…)
               </li>
-              <li className="list-group-item">
-                <strong>Hébergement :</strong> Pour rendre mon blog accessible,
-                j'ai choisi de l'héberger avec Vercel, un outil gratuit qui
-                permet de déployer automatiquement une nouvelle version après
-                chaque push sur GitHub. Vercel offre aussi la possibilité de
-                maintenir en ligne la dernière version fonctionnelle, d'obtenir
-                des erreurs détaillées grâce à un système de logs, et de gérer
-                le nom de domaine. Il propose également d'autres fonctionnalités
-                que je n'ai pas encore explorées, comme la gestion de variables
-                sécurisées.
+              <li>
+                Infrastructure & SI : Administration Poste Client,
+                Fonctionnement des réseaux, Linux
               </li>
-              <li className="list-group-item">
-                <strong>Gestion des données :</strong> Toutes les données du
-                blog sont stockées dans un tableau en JavaScript, ce qui me
-                permet de les compléter, de les organiser par thématique, et de
-                les modifier facilement si je souhaite ajouter des informations.
+            </ul>
+            <p className="card-text">
+              <strong>2ème année :</strong>
+            </p>
+            <ul>
+              <li>Développement : C#, PHP, Gameprogramming avec Unity</li>
+              <li>
+                Conception produit : Architecture IoT, Programmation
+                micro-contrôleur, Accessibilité et qualité web
+              </li>
+              <li>Data : SQL, Python, Analyse et manipulation de données</li>
+              <li>
+                Infrastructure & SI : Linux, Services réseaux, Windows Server,
+                Réseaux, Introduction à la cybersécurité
+              </li>
+              <li>
+                Mises en situation professionnelle : Ydays, Ylabs, Challenge 48h
+              </li>
+            </ul>
+            <hr />
+            <p className="card-text">
+              <strong>Baccalauréat Scientifique</strong> - Aux Lazaristes, Lyon
+              - 2022
+            </p>
+            <p className="card-text">
+              Spécialités : Mathématiques, Physique-Chimie, Sciences de
+              l’ingénieur, Maths expertes
+            </p>
+            <hr />
+            <p className="card-text">
+              <strong>
+                BAFA (Brevet d'Aptitude aux Fonctions d'Animateur)
+              </strong>{" "}
+              - STAJ Rhône-Alpes, Montélimar - 2021 - 2022
+            </p>
+            <p className="card-text">
+              Formation : Handicap et différences / Petite enfance
+            </p>
+            <hr />
+            <p className="card-text">
+              <strong>Brevet d'Initiation à l'Aéronautique (BIA)</strong> - Aux
+              Lazaristes, Lyon - 2020
+            </p>
+            <hr />
+
+            <p className="card-text">
+              <strong>Certifications :</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>Certification ArcServe</strong> - en cours
+              </li>
+              <li>
+                <strong>Bac +1 & +2</strong> - obtenu
+              </li>
+              <li>
+                <strong>Bac</strong> - obtenu
+              </li>
+              <li>
+                <strong>BAFA</strong> - obtenu
+              </li>
+              <li>
+                <strong>BIA</strong> - obtenu
+              </li>
+            </ul>
+            <hr />
+            <p className="card-text">
+              <strong>Formations supplémentaires :</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>ArcServe ShadowProtect</strong> - Cybersecurity
+                Recovery, 2022
+              </li>
+              <li>
+                <strong>Ateliers de Pen-Test</strong> - Participation à des
+                ateliers de penetration testing, 2024
+              </li>
+              <li>
+                <strong>Projets personnels</strong> - Coding new Languages, 2022
+                - en cours
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-
-    <div className="row mb-5">
-      <div className="col-md-12">
-        <div className="card">
+      <div className="col-md-6 d-flex align-items-stretch">
+        <div className="card mb-4 flex-fill">
           <div className="card-header">
-            <h2 className="card-title mb-0">Améliorations Futures</h2>
+            <h2 className="card-title mb-0">Mes Passions</h2>
           </div>
           <div className="card-body">
-            <p>Voici quelques exemples d'améliorations envisagées :</p>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
-                <strong>Publication de posts :</strong> J'aimerais mettre en
-                place un accès sécurisé uniquement pour moi, me permettant
-                d'ajouter des articles via un formulaire.
+                <strong>Nouvelles technologies:</strong> Hardware, IA
               </li>
               <li className="list-group-item">
-                <strong>Hébergement :</strong> Une fois la mise en place de mon
-                serveur personnel terminée, j'hébergerai ce blog dessus et
-                prendrai un nom de domaine personnalisé.
+                <strong>Sports:</strong> Tennis, Badminton, VTT
               </li>
               <li className="list-group-item">
-                <strong>Stockage des données :</strong> J'aimerais également
-                stocker toutes mes données, images et informations dans une base
-                de données distante avec un accès sécurisé.
+                <strong>Voyages:</strong> Culture, Paysages
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-md-6 d-flex align-items-stretch">
+        <div className="card mb-4 flex-fill">
+          <div className="card-header">
+            <h2 className="card-title mb-0">Mes Engagements</h2>
+          </div>
+          <div className="card-body">
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                <strong>Embassadeur Ynov:</strong> Lyon Ynov Campus (2022 -
+                2023)
+              </li>
+              <li className="list-group-item">
+                <strong>Aide informatique:</strong> Reventin-Vaugris (2022 -
+                2024)
+              </li>
+              <li className="list-group-item">
+                <strong>Scout et Guides de France:</strong> Lyon (2021)
               </li>
             </ul>
           </div>
@@ -175,4 +250,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default Profil;

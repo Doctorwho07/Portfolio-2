@@ -104,3 +104,7 @@ th:hover {
   transition: 0.3s;
   border: 1px solid var(--primary);
 }
+span {
+  color: var(--primary);
+  font-weight: bold;
+}

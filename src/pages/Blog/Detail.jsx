@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import projects from "../../Projects";
+import missions from "../../Missions";
 
 const Detail = () => {
   const { id } = useParams();
-  const project = projects[id];
+  const project = missions[id];
 
   if (!project) {
     return <h2>Projets non trouvés</h2>;

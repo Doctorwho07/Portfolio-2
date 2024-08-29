@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import projects from "../../Projects.js";
+import missions from "../../Missions.js";
 import { Link } from "react-router-dom";
 
 const Articles = () => {
@@ -82,7 +82,7 @@ const Articles = () => {
             );
           }}
         >
-          {projects.map((project, index) => (
+          {missions.map((project, index) => (
             <div key={index}>
               <div
                 style={{
@@ -125,7 +125,7 @@ const Articles = () => {
                 {project.description && (
                   <p className="card-text text-muted">{project.description}</p>
                 )}
-                <Link to={`/projects/${project.id}`} className="btn mt-3">
+                <Link to={`/missions/${project.id}`} className="btn mt-3">
                   Découvrir
                 </Link>
               </div>

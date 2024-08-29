@@ -5,6 +5,7 @@ import "../styles/header.css";
 import LottieArrow from "./LottieArrow";
 import arrowWhiteAnimation from "./arrow-white.json";
 import arrowPrimaryAnimation from "./arrow-primary.json";
+import { Divide as Hamburger } from "hamburger-react";
 
 const Header = ({ view, setView }) => {
   const location = useLocation();
@@ -25,8 +26,8 @@ const Header = ({ view, setView }) => {
 
   const handleViewChange = (newView) => {
     setView(newView);
-    Cookies.set("siteView", newView); // Mise à jour du cookie
-    setIsMenuOpen(false); // Ferme le menu après le clic
+    Cookies.set("siteView", newView);
+    setIsMenuOpen(false);
   };
 
   return (
@@ -44,7 +45,11 @@ const Header = ({ view, setView }) => {
             aria-expanded={isMenuOpen}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <Hamburger
+              toggled={isMenuOpen}
+              toggle={setIsMenuOpen}
+              color="#507075"
+            />
           </button>
           <div
             className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
@@ -124,19 +129,6 @@ const Header = ({ view, setView }) => {
                   </li>
                   <li className="nav-item">
                     <Link
-                      to="/lettres-recommandation"
-                      className={`nav-link button-link ${
-                        currentPath === "/lettres-recommandation"
-                          ? "active-link"
-                          : ""
-                      }`}
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Recommandations
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
                       to="/competences"
                       className={`nav-link button-link ${
                         currentPath === "/competences" ? "active-link" : ""
@@ -144,6 +136,28 @@ const Header = ({ view, setView }) => {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Compétences
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/projets"
+                      className={`nav-link button-link ${
+                        currentPath === "/projets" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Projets
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/experiences"
+                      className={`nav-link button-link ${
+                        currentPath === "/experiences" ? "active-link" : ""
+                      }`}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Expériences
                     </Link>
                   </li>
                   <li className="nav-item">
