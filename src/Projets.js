@@ -2,7 +2,7 @@ const projets = [
   {
     id: 0,
     theme: "Développement Web",
-    image: "/projets_screenshot/volontaide.jpg",
+    image: "/projets_screenshot/vav.jpg",
     posts: [
       {
         nom: "Volontaide",
@@ -25,6 +25,24 @@ const projets = [
           "Troc-Mon-Toit est une plateforme qui permet de rechercher et de réserver des logements. Elle offre des filtres avancés pour trouver le logement idéal, de l'appartement à l'igloo.",
         url: "https://github.com/B2-Info-23-24/php-Doctorwho07",
         screenShot: "/projets_screenshot/trocmontoit.png",
+      },
+      {
+        nom: "Ydays",
+        annee: "2022 - 2023",
+        brief: "Site vitrine",
+        description:
+          "Le site vitrine permet de présenter toutes les figurines réalisées depuis la création du projet et jusqu'à sa fin.",
+        url: "https://github.com/Gougouli69/YDetailedFigures",
+        screenShot: "/projets_screenshot/ydays.png",
+      },
+      {
+        nom: "Groupie tracker",
+        annee: "2023",
+        brief: "Recueil et découverte d'artiste",
+        description:
+          "Le projet Groupie Tracker permet de découvrir de nouveaux artistes grâce à une base de données musicale.",
+        url: "",
+        screenShot: "/projets_screenshot/groupie-tracker.png",
       },
     ],
   },
@@ -50,31 +68,6 @@ const projets = [
           "Petit jeu de clicker où l'objectif est de cliquer sur des cookies pour accumuler des points.",
         url: "",
         screenShot: "/projets_screenshot/cookie.png",
-      },
-    ],
-  },
-  {
-    id: 2,
-    theme: "Applications Diverses",
-    image: "/projets_screenshot/ydays.png",
-    posts: [
-      {
-        nom: "Ydays",
-        annee: "2022 - 2023",
-        brief: "Site vitrine",
-        description:
-          "Le site vitrine permet de présenter toutes les figurines réalisées depuis la création du projet et jusqu'à sa fin.",
-        url: "https://github.com/Gougouli69/YDetailedFigures",
-        screenShot: "/projets_screenshot/ydays.png",
-      },
-      {
-        nom: "Groupie tracker",
-        annee: "2023",
-        brief: "Recueil et découverte d'artiste",
-        description:
-          "Le projet Groupie Tracker permet de découvrir de nouveaux artistes grâce à une base de données musicale.",
-        url: "",
-        screenShot: "/projets_screenshot/groupie-tracker.png",
       },
     ],
   },
