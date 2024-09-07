@@ -1,5 +1,5 @@
 import React from "react";
-import projets from "../../Projets.js";
+import projets from "../../data/Projets.js";
 import { Link } from "react-router-dom";
 
 const Projets = () => {

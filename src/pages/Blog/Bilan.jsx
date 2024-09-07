@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import missions from "../../Missions.js";
+import missions from "../../data/Missions.js";
 
 const Bilan = () => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });

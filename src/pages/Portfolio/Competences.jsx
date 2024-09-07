@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/competences.css";
-import softSkills from "../../SoftSkills.js";
+import softSkills from "../../data/SoftSkills.js";
 
 const Competences = () => (
   <div className="container mt-5" id="competences">

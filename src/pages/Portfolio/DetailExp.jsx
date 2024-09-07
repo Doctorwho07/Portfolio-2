@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import experiences from "../../Experiences.js";
-import softSkills from "../../SoftSkills.js";
+import experiences from "../../data/Experiences.js";
+import softSkills from "../../data/SoftSkills.js";
 
 const Detail = () => {
   const { id } = useParams();

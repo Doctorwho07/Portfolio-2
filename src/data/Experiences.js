@@ -10,7 +10,9 @@ const experience = [
     mail: "contact@cimra.fr",
     startDate: "01/07/2024",
     endDate: "09/08/2024",
-    duration: "6",
+    theme:"",
+    
+    duration: 6,
     letter: "/lettres/Lettre de recommandation CIMRA.pdf",
   },
   {
@@ -25,7 +27,7 @@ const experience = [
     mail: "",
     startDate: "",
     endDate: "",
-    duration: "",
+    duration: 0,
     letter: "/lettres/lettre de recommandation mcdo.pdf",
   },
   {
@@ -39,7 +41,7 @@ const experience = [
     mail: "xguillermin@gmail.com",
     startDate: "01/01/2020",
     endDate: "31/12/2020",
-    duration: "8",
+    duration: 8,
     letter: "/lettres/lettre recommandation Xavier Guillermin.pdf",
   },
   {
@@ -53,7 +55,7 @@ const experience = [
     mail: "secretariat@mairiereventinvaugris.fr",
     startDate: "",
     endDate: "",
-    duration: "",
+    duration: 0,
     letter: "/lettres/lettre de recommandation mairie reventin vaugris.pdf",
   },
   {
@@ -67,7 +69,7 @@ const experience = [
     mail: "",
     startDate: "",
     endDate: "",
-    duration: "",
+    duration: 0,
     letter: "",
   },
   {
@@ -81,7 +83,7 @@ const experience = [
     mail: "accueil@csbuers.fr",
     startDate: "",
     endDate: "",
-    duration: "",
+    duration: 0,
     letter: "",
   },
 ];

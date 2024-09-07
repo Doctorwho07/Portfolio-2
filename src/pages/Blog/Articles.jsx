@@ -1,5 +1,5 @@
 import React from "react";
-import missions from "../../Missions.js";
+import missions from "../../data/Missions.js";
 import { Link } from "react-router-dom";
 
 const Articles = () => {
