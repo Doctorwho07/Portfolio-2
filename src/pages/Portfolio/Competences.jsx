@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/competences.css";
 import softSkills from "../../data/SoftSkills.js";
 
 const Competences = () => (
