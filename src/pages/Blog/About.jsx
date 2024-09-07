@@ -3,7 +3,7 @@ import React from "react";
 const About = () => (
   <div className="container mt-5" id="about">
     <h1 className="mb-4">À propos</h1>
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -23,18 +23,18 @@ const About = () => (
         </div>
       </div>
     </div>
-    <div className="mt-4">
+    <div className="mb-4">
       <a href="/CV Alexis ROUCHES.pdf" download className="btn">
         Télécharger Mon CV
       </a>
     </div>
-    <div className="mt-4">
+    <div className="mb-4">
       <a href="https://alexis-r.link" className="btn" target="_blank">
         Mon Profil Numérique
       </a>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -71,7 +71,7 @@ const About = () => (
         </div>
       </div>
     </div>
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -102,7 +102,7 @@ const About = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -143,7 +143,7 @@ const About = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">

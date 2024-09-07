@@ -2,9 +2,9 @@ import React from "react";
 
 const Profil = () => (
   <div className="container mt-5" id="profil">
-    <div className="row mb-5">
-      <h1 className="mb-4">Profil</h1>
-      <div className="col-md-4 d-flex align-items-stretch">
+        <h1 className="mb-4">Profil</h1>
+    <div className="row">
+      <div className="col-md-4 d-flex">
         <div className="card mb-4 flex-fill">
           <div className="card-body">
             <div className="card-header mb-4">
@@ -14,22 +14,22 @@ const Profil = () => (
             </div>
             <p className="card-text">
               Étudiant en <span>3ème année</span> de Bachelor. Spécialité
-              <span>infrastructure réseaux</span> & <span>cybersécurité</span> à
-              Lyon Ynov Campus. Actuellement à la recherche d'une{" "}
+              <span> infrastructure réseaux</span> & <span>cybersécurité</span> à
+              Lyon Ynov Campus. Actuellement à la recherche d'une
               <span>alternance</span> en cybersécurité pour octobre 2024.
             </p>
             <p>
-              <strong>Email :</strong>{" "}
+              <strong>Email :</strong>
               <a href="mailto:alexis.rouches@icloud.com">
                 alexis.rouches@icloud.com
               </a>
             </p>
             <p>
-              <strong>Téléphone :</strong>{" "}
+              <strong>Téléphone :</strong>
               <a href="tel:0778221121">0778221121</a>
             </p>
             <p>
-              <strong>Portefeuille numérique :</strong>{" "}
+              <strong>Portefeuille numérique :</strong>
               <a
                 href="https://alexis-r.link"
                 target="_blank"
@@ -84,9 +84,9 @@ const Profil = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
-        <div className="card">
+        <div className="card mb-4">
           <div className="card-header">
             <h2 className="card-title mb-0">Formation</h2>
           </div>
@@ -149,7 +149,7 @@ const Profil = () => (
             <p className="card-text">
               <strong>
                 BAFA (Brevet d'Aptitude aux Fonctions d'Animateur)
-              </strong>{" "}
+              </strong>
               - STAJ Rhône-Alpes, Montélimar - 2021 - 2022
             </p>
             <p className="card-text">

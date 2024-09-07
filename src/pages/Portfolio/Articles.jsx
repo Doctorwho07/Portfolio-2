@@ -2,7 +2,7 @@ import React from "react";
 import projets from "../../Projets.js";
 import { Link } from "react-router-dom";
 
-const Projets = () => {
+const Articles = () => {
   const isMobile = window.innerWidth <= 768;
 
   return (
@@ -68,4 +68,4 @@ const Projets = () => {
   );
 };
 
-export default Projets;
+export default Articles;

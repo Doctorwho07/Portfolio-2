@@ -1,6 +1,4 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import missions from "../../Missions.js";
 import { Link } from "react-router-dom";
 
@@ -13,81 +11,13 @@ const Articles = () => {
       <p className="lead">
         Découvrez mes projets et réalisations récents par thématique.
       </p>
-      <div className="carousel-wrapper mb-5">
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          showArrows={false}
-          emulateTouch={true}
-          useKeyboardArrows={true}
-          dynamicHeight={true}
-          centerMode={!isMobile}
-          centerSlidePercentage={isMobile ? 100 : 40}
-          showIndicators={true}
-          renderIndicator={(onClickHandler, isSelected, index, label) => {
-            const indicatorStyle = isSelected
-              ? { backgroundColor: "#507075" }
-              : { backgroundColor: "#ccc" };
-            return (
-              <li
-                style={{
-                  ...indicatorStyle,
-                  display: "inline-block",
-                  width: 15,
-                  height: 15,
-                  borderRadius: "50%",
-                  margin: "0 8px",
-                  cursor: "pointer",
-                }}
-                aria-label={`${label} ${index + 1}`}
-                onClick={onClickHandler}
-                key={index}
-              />
-            );
-          }}
-          renderItem={(item, options) => {
-            const isSelected = options.isSelected;
-            const cardStyle = isSelected
-              ? {
-                  transform: "scale(1.05)",
-                  border: "2px solid #507075",
-                  boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
-                }
-              : {
-                  transform: "scale(1)",
-                  border: "1px solid #ddd",
-                };
-            return (
-              <div
-                key={options.key}
-                className="d-flex justify-content-center"
-                style={{
-                  transition: "transform 0.3s ease-in-out",
-                }}
-              >
-                <div
-                  className="card shadow-sm"
-                  style={{
-                    ...cardStyle,
-                    width: isMobile ? "90%" : "24rem",
-                    margin: "20px",
-                    height: isMobile ? "300px" : "35rem",
-                    borderRadius: "15px",
-                    overflow: "hidden",
-                  }}
-                >
-                  {item}
-                </div>
-              </div>
-            );
-          }}
-        >
-          {missions.map((project, index) => (
-            <div key={index}>
+      <div className="row">
+        {missions.map((project, index) => (
+          <div key={index} className="col-md-4 mb-4">
+            <div className="card shadow-sm" style={{ height: "100%" }}>
               <div
                 style={{
-                  height: isMobile ? "200px" : "25rem",
-                  overflow: "hidden",
+                  height: isMobile ? "200px" : "250px",
                 }}
               >
                 {project.image ? (
@@ -100,7 +30,6 @@ const Articles = () => {
                       height: "100%",
                       objectFit: "cover",
                       filter: "brightness(90%)",
-                      transition: "filter 0.3s ease",
                     }}
                   />
                 ) : (
@@ -130,11 +59,11 @@ const Articles = () => {
                 </Link>
               </div>
             </div>
-          ))}
-        </Carousel>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default React.memo(Articles);
+export default Articles;

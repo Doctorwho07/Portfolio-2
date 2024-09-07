@@ -15,7 +15,7 @@ const Detail = () => {
     <div className="container mt-5">
       <h1 className="mb-4">{project.theme}</h1>
 
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">
@@ -48,9 +48,8 @@ const Detail = () => {
                       src={post.image}
                       alt="image"
                       style={{
-                        width: "55vw",
+                        width: "30vw",
                         height: "auto",
-                        maxWidth: "100%",
                       }}
                     />
                   </li>
@@ -60,7 +59,7 @@ const Detail = () => {
           </div>
         </div>
       </div>
-      <Link to="/about" className="btn btn-lg mt-4">
+      <Link to="/about" className="btn btn-lg mb-4">
         Retour aux articles
       </Link>
     </div>

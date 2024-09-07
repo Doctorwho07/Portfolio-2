@@ -7,7 +7,7 @@ const Entreprise = () => (
       Découvrez comment CIMRA peut transformer vos défis informatiques en
       solutions simples et efficaces.
     </p>
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -26,7 +26,7 @@ const Entreprise = () => (
         </div>
       </div>
     </div>
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -88,7 +88,7 @@ const Entreprise = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -117,7 +117,7 @@ const Entreprise = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -167,7 +167,7 @@ const Entreprise = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">

@@ -14,7 +14,7 @@ const Detail = () => {
     <div className="container mt-5">
       <h1 className="mb-4">{project.theme}</h1>
 
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">
@@ -67,7 +67,7 @@ const Detail = () => {
                         src={post.screenShot}
                         alt="image"
                         style={{
-                          width: "55vw",
+                          width: "30vw",
                           height: "auto",
                           maxWidth: "100%",
                         }}

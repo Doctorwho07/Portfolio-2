@@ -1,10 +1,11 @@
 import React from "react";
 import "../../styles/competences.css";
+import softSkills from "../../SoftSkills.js";
 
 const Competences = () => (
   <div className="container mt-5" id="competences">
     <h1 className="mb-4">Compétences</h1>
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-6 d-flex align-items-stretch">
         <div className="card flex-fill custom-card">
           <div className="card-header">
@@ -51,7 +52,6 @@ const Competences = () => (
           </div>
         </div>
       </div>
-
       <div className="col-md-6 d-flex align-items-stretch" id="soft">
         <div className="card flex-fill custom-card">
           <div className="card-header">
@@ -59,66 +59,20 @@ const Competences = () => (
           </div>
           <div className="card-body">
             <ul className="list-group list-group-flush">
-              <li
-                className="list-group-item"
-                data-author="DI RIENZO Antoine"
-                data-entreprise="CIMRA INFORMATIQUE SERVICES"
-              >
-                <strong>Esprit critique</strong> - Alexis a montré une capacité
-                remarquable à comprendre rapidement les enjeux techniques.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="Anthony Pereira"
-                data-entreprise="McDonald's Chasse-sur-Rhône"
-              >
-                <strong>Attitude positive</strong> - Toujours souriant et prêt à
-                aider, il a su s’intégrer rapidement au sein des équipes.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="Anthony Pereira"
-                data-entreprise="McDonald's Chasse-sur-Rhône"
-              >
-                <strong>Organisation & méthodologie</strong> - Alexis a su gérer
-                ses tâches avec rigueur et efficacité, tout en jonglant avec ses
-                études.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="Anthony Pereira"
-                data-entreprise="McDonald's Chasse-sur-Rhône"
-              >
-                <strong>Professionnalisme</strong> - Sa capacité à rester calme
-                sous pression et à offrir un service attentionné a été largement
-                reconnue.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="DI RIENZO Antoine"
-                data-entreprise="CIMRA INFORMATIQUE SERVICES"
-              >
-                <strong>Sens du collectif</strong> - Son excellent esprit
-                d’équipe et son sens de l’initiative ont été très appréciés par
-                ses collègues.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="Xavier Guillermin"
-                data-entreprise="BTX Cases"
-              >
-                <strong>Curiosité</strong> - Alexis est constamment motivé pour
-                apprendre et améliorer ses compétences.
-              </li>
-              <li
-                className="list-group-item"
-                data-author="Anthony Pereira"
-                data-entreprise="McDonald's Chasse-sur-Rhône"
-              >
-                <strong>Sens des responsabilités</strong> - Il a montré une
-                grande capacité à prendre des initiatives et à assumer des
-                responsabilités supplémentaires.
-              </li>
+              {softSkills.map((entry, index) => (
+                <li key={index} className="list-group-item">
+                  <strong>
+                    {entry.author} - {entry.entreprise}
+                  </strong>
+                  <ul className="list-group">
+                    {entry.skills.map((skill, skillIndex) => (
+                      <li key={skillIndex} className="list-group-item">
+                        <strong>{skill.skill}</strong> - {skill.description}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

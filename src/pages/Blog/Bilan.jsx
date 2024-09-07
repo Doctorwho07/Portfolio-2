@@ -40,11 +40,11 @@ const Bilan = () => {
     <div className="container mt-5" id="bilan">
       <h1 className="mb-4">Bilan</h1>
 
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">
-              <h2 className="card-title mb-0">1. Introduction</h2>
+              <h2 className="card-title">1. Introduction</h2>
             </div>
             <div className="card-body">
               <p className="card-text">
@@ -58,12 +58,12 @@ const Bilan = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mb-4">
         <a href="/Lettre de recommandation CIMRA.pdf" download className="btn">
           Ma lettre de recommandation CIMRA
         </a>
       </div>
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">
@@ -153,7 +153,7 @@ const Bilan = () => {
           </div>
         </div>
       </div>
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">
@@ -268,7 +268,7 @@ const Bilan = () => {
         </div>
       </div>
 
-      <div className="row mb-5">
+      <div className="row mb-4">
         <div className="col-md-12">
           <div className="card">
             <div className="card-header">

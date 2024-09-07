@@ -8,7 +8,7 @@ const Remerciements = () => (
       déroulement de mon stage.
     </p>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -46,7 +46,7 @@ const Remerciements = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -77,7 +77,7 @@ const Remerciements = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">
@@ -94,7 +94,7 @@ const Remerciements = () => (
       </div>
     </div>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">

@@ -5,7 +5,7 @@ const PlanDuSite = () => (
   <div className="container mt-5" id="sitemap">
     <h1 className="mb-4">Plan du site</h1>
 
-    <div className="row mb-5">
+    <div className="row mb-4">
       <div className="col-md-12">
         <div className="card">
           <div className="card-header">

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.1"
+    "vite": "^5.4.3"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.1",
@@ -18,15 +18,21 @@
     "framer-motion": "^11.3.30",
     "hamburger-react": "^2.5.1",
     "internship-report-cimra": "file:",
+    "jquery": "^3.7.1",
     "js-cookie": "^3.0.5",
     "lottie-react": "^2.4.0",
+    "owl.carousel": "^2.3.4",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.13.0",
+    "react-owl-carousel": "^2.3.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.26.1",
     "react-scroll-parallax": "^3.4.5",
-    "react-spring": "^9.7.4"
+    "react-slick": "^0.30.2",
+    "react-spring": "^9.7.4",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.12"
   }
 }
