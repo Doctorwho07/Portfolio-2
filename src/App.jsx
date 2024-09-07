@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WithCookie from "./components/WithCookie";
+import ScrollToTop from "./components/ScrollToTop";
 //----- Commun -----//
 import Contact from "./pages/Commun/Contact";
 import SiteMap from "./pages/Commun/SiteMap";
@@ -25,6 +26,7 @@ import Competences from "./pages/Portfolio/Competences";
 import Projets from "./pages/Portfolio/Projets";
 import Experiences from "./pages/Portfolio/Experiences";
 import DetailProjet from "./pages/Portfolio/Detail";
+import DetailExp from "./pages/Portfolio/DetailExp";
 
 const App = () => {
   const [view, setView] = useState("blog");
@@ -34,6 +36,7 @@ const App = () => {
       <div>
         <Header view={view} setView={setView} />
         <main>
+          <ScrollToTop />
           <Routes>
             <Route path="/contact" element={<Contact />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
@@ -48,6 +51,7 @@ const App = () => {
                 <Route path="/competences" element={<Competences />} />
                 <Route path="/projets" element={<Projets />} />
                 <Route path="/experiences" element={<Experiences />} />
+                <Route path="/experiences/:id" element={<DetailExp />} />
                 <Route path="/projets/:id" element={<DetailProjet />} />
               </>
             )}
